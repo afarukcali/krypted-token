@@ -105,7 +105,6 @@ contract PreICOSale{
   function _updatePurchasingState(address _beneficiary, uint256 _weiAmount) internal {
     // optional override
   }
-
   function _getTokenAmount(uint256 _weiAmount) internal view returns (uint256) {// Converts to purchased ether  to token
     return _weiAmount.mul(rate);
   }
